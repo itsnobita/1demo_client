@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import "./login.css"
 import axios from 'axios';
+import { domainName } from '../../config/urls';
 
 // Define the Login component
 const Login = () => {
@@ -13,7 +14,7 @@ const Login = () => {
   const handleLogin =async (e) => {
       e.preventDefault();
       
-     await axios.post("http://localhost:9093/api/v1/usr/login", {
+     await axios.post(`${domainName}/usr/login`, {
           username: username,
           password:password
       }).then(r => {
