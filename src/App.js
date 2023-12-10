@@ -5,9 +5,9 @@ import RouterHandler from "./components/Routes/RouteHandler";
 const App = () => {
   return (
     <BrowserRouter>
-      <>
+    
         <RouterHandler />
-        </>
+        
     </BrowserRouter>
   );
 };

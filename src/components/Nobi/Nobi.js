@@ -16,8 +16,13 @@ export default function Nobi() {
         
     }, [])
     console.log(myname)
-  return (
+    return (
+        <>
+            <div>
+                <a href='/login'>Login</a>
+            </div>
     <div style={{left:"500px",position:"absolute"}}>{myname}</div>
+      </>
   )
 }
 

@@ -14,8 +14,6 @@ function RouterHandler() {
           <Route path="/test" element={<TestComp />} />
           <Route path="/nobi" element={<Nobi />} />
 
-          
-          
    </Routes>
   );
 }
