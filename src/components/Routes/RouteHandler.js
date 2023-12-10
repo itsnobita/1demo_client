@@ -10,7 +10,7 @@ function RouterHandler() {
   return (
       <Routes>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/" element={<Navigate to="/nobi" />} />
+          <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/test" element={<TestComp />} />
           <Route path="/nobi" element={<Nobi />} />
 
