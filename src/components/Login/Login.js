@@ -38,10 +38,17 @@ const Login = () => {
       });
   };
 
-  console.log(navigator, "==navigaot\n", window);
-
+  
   return (
-    <div>
+    <div style={{
+      margin: 0,
+      padding: 0,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      minHeight: "100vh",
+  }}>
+    <div className="loginContainer">
       <h1>Login</h1>
       <form onSubmit={handleLogin} className="loginForm">
         <label className="loginlabel">
@@ -68,7 +75,8 @@ const Login = () => {
           Login
         </button>
       </form>
-    </div>
+      </div>
+      </div>
   );
 };
 
