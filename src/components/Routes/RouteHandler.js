@@ -6,13 +6,15 @@ import Nobi from "../Nobi/Nobi";
 import Login from "../Login/Login";
 import Chat from "../Chat";
 import SecretMessageSender from "../Message/SecretMessageSender";
+import Screenshot from "../Screenshot/Screenshot";
 
 
 function RouterHandler() {
   return (
       <Routes>
           
-          <Route path="/nobi1" element={<SecretMessageSender/>}/>
+          <Route path="/nobi" element={<SecretMessageSender/>}/>
+          <Route path="/ss" element={<Screenshot/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/test" element={<TestComp />} />

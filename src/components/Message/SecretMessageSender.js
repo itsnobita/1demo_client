@@ -91,7 +91,7 @@ const SecretMessageSender = () => {
             </button>
             <label htmlFor="message" className='sendMSGlabel' style={{ marginTop: '15px', marginBottom: '5px' }}>
                 Send an image with a secret message?
-                <a href="/ss/set?password=1234" style={{ textDecoration: 'none' }}> Click here</a>
+                <a href="/ss" style={{ textDecoration: 'none' }}> Click here</a>
             </label>
             </div>
             </div>
