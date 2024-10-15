@@ -105,6 +105,17 @@ const SecretMessageSender = () => {
             Click here
           </a>
         </label>
+        <label
+          htmlFor="message"
+          className="sendMSGlabel"
+          style={{ marginTop: "15px", marginBottom: "5px" }}
+        >
+          Wanna check messages for you?
+          <a href="/showmsg" style={{ textDecoration: "none" }}>
+            {" "}
+            Click here
+          </a>
+        </label>
       </div>
     </div>
   );
