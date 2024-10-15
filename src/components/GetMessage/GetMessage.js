@@ -26,7 +26,7 @@ const GetMessage = () => {
 
       if (response.ok) {
           const data = await response.json();
-        setMessage(data.result && data.result[0].messages || ['No message found.']);
+        setMessage(data.result.length>0 && data.result[0].messages || ['No message found.']);
         setMessageFetched(true);
       } else {
         throw new Error('Failed to fetch the message.');
@@ -40,7 +40,7 @@ const GetMessage = () => {
 
   return (
     <div className="get-message-container">
-      <h2>Find Message by Name</h2>
+      <h2>Wanna see my messages for you?</h2>
       <form onSubmit={handleSubmit} className="get-message-form">
         <div className="form-group">
           <label htmlFor="name">Enter Name:</label>
@@ -54,11 +54,12 @@ const GetMessage = () => {
           />
         </div>
         <button type="submit" className="submit-btn" disabled={loading}>
-          {loading ? 'Fetching...' : 'Fetch Message'}
+          {loading ? 'Fetching...' : 'Get Message'}
         </button>
       </form>
 
-      {loading && <div className="loader">Fetching the message...</div>}
+      {loading && <div className="loader"></div>}
+      {loading && <div>wait I am writing some for you...</div>}
       {error && <div className="error-message">{error}</div>}
       {messageFetched && !error && (
         <div className="message-display">
